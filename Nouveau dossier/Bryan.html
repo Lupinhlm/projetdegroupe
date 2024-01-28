@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bryan</title>
+    <style>
+        header> table>tr >td >img
+        {
+            width: 4CM;
+        }
+        td P
+            {
+                font-size: 160%;
+                font-family: ARIAL;
+                color: rgb(218, 165, 32);
+                text-align: center;
+                margin-left: 5CM;
+
+            }
+            header .br a
+            {
+              text-decoration: none;
+              color: black;
+              font-size: 25px;
+              margin-left: 8px;
+              padding-bottom: 4px; 
+            }
+            .br
+            {
+              padding-left: 250PX;
+
+            }
+            nav{
+                width: 100%;
+                background-color: #424558;
+                text-align: center;
+                position: center;
+            }
+
+            nav ul{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            nav li{
+                margin: 3px;
+                padding: 5px;
+                list-style-type: none;
+            }
+
+            nav > ul > li{
+                float: left;
+                position: relative;
+            }
+
+            nav > ul:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .submenu{
+                display: none;
+            }
+
+            nav a{
+                display: block;
+                text-decoration: none;
+                width: 120px;
+                padding: 15px;
+                text-align: left;
+            }
+
+            nav > ul > li > a{
+                padding: 20px 30px;
+                color: #FFF;
+                text-align: center;
+            }
+
+            nav > ul > li:hover a{
+                padding: 15px 30px 20px 30px;
+            }
+
+
+            nav li:hover .submenu{
+                display: inline-block;
+                position: absolute;
+                top: 100%;
+                left: 0px;
+                padding: 0px;
+                z-index: 1000;
+            }
+
+            .table{
+                display: table;
+                margin: 0 auto;
+            }
+
+            .submenu li a{
+                padding: 15px 30px;
+                font-size: 13px;
+                color: aqua;
+                width: 270px;
+            }
+
+            .submenu li{
+                border-bottom: 1px solid #CCC;
+            }
+
+            .menu-Acceuil:hover{
+                border-top: 5px solid #e44d26;
+                background-color: rgba(228, 77, 38, 0.15);
+            }
+
+            .menu-Classe:hover{
+                border-top: 5px solid blue;
+                background-color: rgba(000, 112, 192, 0.15);
+            }
+
+            .menu-Matiers:hover{
+                border-top: 5px solid yellow;
+                background-color: rgba(000, 112, 192, 0.15);
+            }
+
+            .menu-Presentation:hover{
+                border-top: 5px solid green;
+                background-color: rgba(000, 112, 192, 0.15);
+            }
+
+            .menu-Emploie:hover{
+                border-top: 5px solid pink;
+                background-color: rgba(000, 112, 192, 0.15);
+            }
+
+            .menu-Bullettin:hover{
+                border-top: 5px solid #e44d26;
+                background-color: rgba(228, 77, 38, 0.15);
+            }
+
+            .menu-Evenement:hover{
+                border-top: 5px solid #e44d26;
+                background-color: rgba(228, 77, 38, 0.15);
+            }
+
+            .menu-Emploie .submenu{
+                background-color: rgba(000, 112, 192, 0.15);
+            }
+
+            .submenu li:hover a{
+                color: #EEE;
+                font-weight: bold;
+            }
+
+            .menu-Emploie .submenu li:hover{
+                background-color: blue;
+            }
+
+            div > a{
+                background-color: #424558;  
+            }
+            footer{
+                background-color: #111;
+            }
+
+            .footerContainer{
+                width: 100%;
+            }
+
+            .socialIcons{
+                display: flex;
+                justify-content: center;
+            }
+
+            .socialIcons a{
+                text-decoration: none;
+                padding: 10px;
+                border-color: white;
+                margin: 10px;
+                border-radius: 50%;
+            }
+
+            .socialIcons a i{
+                font-size: 1cm;
+                color: black;
+                opacity: 0.9;
+            }
+
+            .socialIcons a:hover{
+                background-color: white;
+                transition: 0.5s;
+            }
+
+            .socialIcons a:hover{
+                color: white;
+                transition: 0.5s;
+            }
+
+            .footerNav ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;  
+            }
+
+            .footerNav ul li a{
+                color: white;
+                padding: 5px;
+                margin: 10px;
+                text-decoration: none;
+                font-size: 1.3em;
+                opacity: 0.7;
+                transition: 0.5s;
+            }
+
+            .footerNav ul li a:hover{
+                opacity: 1;
+            }
+
+            .footerBottom{
+                background-color: #000;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footerBottom p{
+                color: white;
+            }
+
+            .disigner{
+                opacity: 0.7;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                margin:0px 5px;
+            }
+
+            @media (max-width: 700px){
+                .footerNav ul{
+                    flex-direction: column;
+                }
+                .footerNav ul li{
+                    width: 100%;
+                    text-align: center;
+                    margin: 10px;
+                }
+            }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="logo.png"></td>
+                <td><p>L'école des leaders. 30 années au 
+                <br> 
+                    service de l'excellence </p></td>
+                <td>
+                    <div class="br">
+                        <a href="ACCUEIL1.HTML">CONNEXION</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <ul>
+            <li class="menu-Acceuil"><a href="ACCEUIL2.html">ACCUEIL</a></li>
+            <li class="menu-Classe"><a href="MAIL1.html">GROUPE</a></li>
+            <li class="menu-Matiers"><a href="MATIERE1.HTML">MATIERES</a></li>
+            <li class="menu-Presentation"><a href="GROUPE1.HTML">PRESENTATION</a></li>
+            <li class="menu-Emploie"><a href="Emploie.html">EMPLOIE DU TEMPS</a>
+                <ul class="submenu">
+                    <li><a href="Prunelle.html">d'ALMEIDA PRUNELLE</a></li>
+                    <li><a href="Bryan.html">EKLOU BRYAN</a></li>
+                    <li><a href="Astrid.html">GUEDOU ASTRID</a></li>
+                    <li><a href="Halim.html">JOACHIM HALIM</a></li>
+                    <li><a href="Aurel.html">KPANTI AUREL</a></li>
+                </ul>
+            </li>
+            <li class="menu-Bullettin"><a href="BULLETTIN.HTML">BULLETTIN</a></li>
+        </ul>
+    </nav>
+	<h1 text align="center">EKLOU Bryan</h1>
+    <h3>Emploi du temps de la semaine</h3><br>
+
+    <table>
+        <tr>
+            <th>Horraire</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+            <th>Samedi</th>
+            <th>Dimanche</th>
+        </tr>
+        <tr>
+            <td>8h-10h</td>
+            <td rowspan="2">Electricité Generale</td>
+            <td rowspan="2">Algebre Linéaire</td>
+            <td rowspan="2">HTML CSS</td>
+            <td rowspan="2">Economie</td>
+            <td rowspan="2">Structure de Donnée</td>
+            <td rowspan="2">Footing</td>
+            <td rowspan="2">Eglise</td>
+        </tr>
+         <tr>
+            <td>10h-12h</td>
+            
+            
+           
+        </tr>
+         <tr>
+            <td>12h-13h</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>13h-15h</td>
+            <td rowspan="2">Electronique Analogique</td>
+            <td rowspan="2">Algebre Lineaire</td>
+            <td rowspan="2">HTML CSS</td>
+            <td rowspan="2">Ensemble des reels</td>
+            <td rowspan="2">Outils Bureautiques</td>
+            <td rowspan="2">Football</td>
+            <td rowspan="2">Revision</td>
+        </tr>
+         <tr>
+            <td>15h-17h</td>
+            
+
+        </tr>
+    </table><br><br>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://m.facebook.com/profile.php/?id=100076534481177"><i class="fa-brands fa-facebook"></i></a>
+                <a href=https://www.instagram.com/halim_joachim?igsh=eGE3cnMwdmFpcmxh&utm_source=qr><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Halim37212263"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://wa.me//+22997578269"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="Site Esgis.html">Accueil</a></li>
+                    <li><a href="Propos.html">Propos</a></li>
+                    <li><a href="mailto:joachimhalim1@gmail.com">Contacter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by GROUPE ESGIS<span class="designer"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
